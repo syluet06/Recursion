@@ -1,5 +1,3 @@
-import sys
-import time
 def hanoi(n,source,destination,subs):
     if n is 1:
         print("%s > %s" % (source,destination))
@@ -11,4 +9,3 @@ def hanoi(n,source,destination,subs):
 for i in range(3):
     print(str(i+1))
     hanoi(i+1,"A","C","B")
-    time.sleep(1)
