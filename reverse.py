@@ -1,9 +1,7 @@
-def count(dest,let):
-    if len(dest) is 0:
-        return 0
-    if dest[0] is let:
-        return 1+count(dest[1::], let)
+def reverse(s):
+    if len(s) is 1:
+        return s
     else:
-        return count(dest[1::], let)
+        return s[-1]+reverse(s[0:-1])
 
-print str(count("s apdkho dahp adn dhapk adhassssess rs", 's'))
+print("%s:%s" % ("soner",reverse("soner")))
