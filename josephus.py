@@ -1,4 +1,3 @@
-import time
 def josephus(person):
     if person==1 or person==2:
         return 1
@@ -8,6 +7,6 @@ def josephus(person):
         else:
             return 2*josephus((person+1)/2)-1
 
-for person in range(100):
-    print str(person) + " " + str(josephus(person+1))
-    time.sleep(1)
+for person in range(20):
+    print str(person+1) + " " + str(josephus(person+1))
+    
