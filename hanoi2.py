@@ -3,9 +3,9 @@ def hanoi(n,source,spare,destination):
         return
     else:
         hanoi(n-1,source,spare,destination)
-        print("3%s > %s" % (source,spare))
+        print("%s > %s" % (source,spare))
         hanoi(n-1,destination,spare,source)
-        print("4%s > %s" % (spare,destination))
+        print("%s > %s" % (spare,destination))
         hanoi(n-1,source,spare,destination)
 
 for i in range(3):
