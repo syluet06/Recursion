@@ -1,5 +1,3 @@
-import sys
-import time
 def fibonacci(n):
     if n<=1:
         return 1;
@@ -7,5 +5,4 @@ def fibonacci(n):
         return fibonacci(n-1)+fibonacci(n-2);
 
 for i in range(10):
-    print("fibonacci(%d):%d" % (i,fibonacci(i)))
-    time.sleep(.2)
+    print("fibonacci(%d):%d" % (i+1,fibonacci(i+1)))
