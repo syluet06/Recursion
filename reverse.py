@@ -4,4 +4,4 @@ def reverse(s):
     else:
         return s[-1]+reverse(s[0:-1])
 
-print("%s:%s" % ("soner",reverse("soner")))
+print("%s:%s" % ("recursion is the best",reverse("recursion is the best")))
