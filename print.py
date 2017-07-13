@@ -3,4 +3,4 @@ def printw(s,current,start):
         printw(s,current-1,start)
     print(s[current])
 
-printw("soner",4,0)
+printw("i love recursion",4,0)
